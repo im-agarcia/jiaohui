@@ -18,19 +18,11 @@ const BotonMedium = () => {
     )
   }
 
-const BotonBig = ({texto, color}) => {
+const BotonBig = ({texto, color, funcion}) => {
     return (
       <TouchableOpacity
         style={styles.opacity}
-        onPress={
-            <Toast
-            position={50}
-            shadow={false}
-            animation={false}
-            hideOnPress={true}
-            >This is a message
-            </Toast>
-        }
+        onPress={funcion}
       >
           <View
             style={{
